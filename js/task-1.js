@@ -1,15 +1,8 @@
-// const makeTransaction = (quantity, pricePerDroid);
+function makeTransaction (quantity, pricePerDroid) {
+    const totalPrice = quantity * pricePerDroid;
+    return `You ordered ${quantity} droids worth ${totalPrice} credits!`
+}
 
-// const message = 'You ordered <quantity> droids worth <totalPrice> credits!';
-// console.log();
-
-// Перевірка;
-// const age = 16;
-
-// const isAdult = age >= 18;
-
-// console.log(isAdult);
-
-const value = '24.5px';
-
-console.log(isValid);
+console.log(makeTransaction(5, 3000));
+console.log(makeTransaction(3, 1000));
+console.log(makeTransaction(10, 500));
